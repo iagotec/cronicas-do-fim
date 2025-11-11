@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+   <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">CRÔNICAS<br>DO FIM</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="personagem.html">Avatar</a></li>
+      <li><a href="feed.html">Comunidade</a></li>
+      <li><a href="lojas.html">Lojas</a></li>
+    </ul>
+  </nav>
+
+    </div>
+  </nav>
+  <section>
+    <h2>👤 Perfil do Usuário</h2>
+    <p>Nome: <b>Leitor_01</b></p>
+    <img id="avatar" src="img/avatar.png" width="120">
+    <p>Itens: <span id="itens"></span></p>
+  </section>
+
+  <script>
+    const itens = JSON.parse(localStorage.getItem("itens") || "[]");
+    document.getElementById("itens").innerText = itens.join(", ") || "Nenhum item ainda";
+  </script>
+</body>
+</html>

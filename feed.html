@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Comunidade do Livro</title>
+  <!-- CSS global -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- CSS específico do feed -->
+  <link rel="stylesheet" href="css/feed.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">CRÔNICAS<br>DO FIM</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="personagem.html">Avatar</a></li>
+      <li><a href="feed.html">Comunidade</a></li>
+      <li><a href="lojas.html">Lojas</a></li>
+    </ul>
+  </nav>
+
+  <!-- Container geral -->
+  <main class="main-container">
+    <!-- Lado esquerdo (personagem) -->
+    <aside class="character-side">
+      <img src="img/personagem.png" alt="Personagem" class="personagem">
+    </aside>
+
+    <!-- Lado direito (feed/chat) -->
+    <section id="feed">
+      <h2>📘 Comunidade: “Dom Casmurro”</h2>
+      <div id="chatContainer">
+        <div class="msg left">
+          <b>@Lectora88</b>
+          <p>Terminei o livro ontem 😭 ainda não sei se Capitu traiu ou não!</p>
+        </div>
+        <div class="msg right">
+          <b>@BookGuy</b>
+          <p>O autor é um gênio! As entrelinhas de “Dom Casmurro” são incríveis!</p>
+        </div>
+        <div class="msg left">
+          <b>@AnaLeitora</b>
+          <p>Fiz o quiz e ganhei uma “Capa Épica”! ✨ Bora ver quem tira o Lendário?</p>
+        </div>
+      </div>
+
+      <div id="newMsg">
+        <input type="text" id="msgInput" placeholder="Escreva algo sobre o livro...">
+        <button id="sendBtn">Enviar</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/feed.js"></script>
+</body>
+</html>

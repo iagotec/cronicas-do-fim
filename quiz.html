@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz + Roleta</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+   <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">CRÔNICAS<br>DO FIM</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="personagem.html">Avatar</a></li>
+      <li><a href="feed.html">Comunidade</a></li>
+      <li><a href="lojas.html">Lojas</a></li>
+    </ul>
+  </nav>
+      
+    </div>
+  </nav>
+  <section id="quiz">
+    <h2>🧠 Teste seus conhecimentos</h2>
+    <p>Responda o quiz sobre o livro para liberar a roleta de prêmios!</p>
+
+    <form id="quizForm">
+      <p>1️⃣ Quem é o autor do livro?</p>
+      <input name="q1" placeholder="resposta">
+
+      <p>2️⃣ Em que ano foi lançado?</p>
+      <input name="q2" placeholder="resposta">
+
+      <p>3️⃣ Qual o nome do personagem principal?</p>
+      <input name="q3" placeholder="resposta">
+
+      <button type="submit">Enviar respostas</button>
+    </form>
+
+    <p id="resultado"></p>
+  </section>
+
+  <section id="roletaSecao" style="display:none;">
+    <h2>🎰 Roleta de Itens</h2>
+    <p>Você liberou a roleta! Clique em “Girar” para receber um item.</p>
+    <button id="girar">Girar Roleta</button>
+    <p id="premio"></p>
+  </section>
+
+  <!-- 🔹 Script apenas uma vez -->
+  <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Personagem</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/personagem.css">
+</head>
+<body>
+   <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">CRÔNICAS<br>DO FIM</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="personagem.html">Avatar</a></li>
+      <li><a href="feed.html">Comunidade</a></li>
+      <li><a href="lojas.html">Lojas</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>🧙‍♂️ Crie seu personagem</h2>
+    <label>Cor do cabelo: <input type="color" id="hairColor"></label>
+    <label>Cor da roupa: <input type="color" id="outfitColor"></label>
+    <button id="salvar">Salvar</button>
+
+    <div id="preview" style="margin-top:20px;">
+      <div id="hair"></div>
+      <div id="body"></div>
+    </div>
+  </section>
+
+  <script src="js/personagem.js"></script>
+</body>
+</html>

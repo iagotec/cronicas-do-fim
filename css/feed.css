@@ -1,0 +1,168 @@
+/* ======= ESTILO GERAL ======= */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Fundo branco */
+  color: #000;
+  font-family: 'Courier New', monospace;
+  overflow-x: hidden;
+}
+
+/* ======= NAVBAR ======= */
+.navbar {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+/* ======= LAYOUT ======= */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+/* Lado do personagem */
+.character-side {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personagem {
+  width: 80%;
+  max-width: 250px;
+}
+
+/* ======= FEED ======= */
+#feed {
+  width: 60%;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #000; /* Borda preta ao redor do feed */
+  box-shadow: 4px 4px 0 #000; /* Sombra estilo quadrinho */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#feed h2 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* ======= MENSAGENS ======= */
+.msg {
+  margin: 10px 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  position: relative;
+  text-align: left;
+  background: #fff; /* Fundo branco das mensagens */
+  border: 2px solid #000; /* Contorno preto */
+  box-shadow: 3px 3px 0 #000; /* Efeito “cartoon” */
+}
+
+.msg.left {
+  align-self: flex-start;
+}
+
+.msg.right {
+  align-self: flex-end;
+}
+
+/* Container do chat */
+#chatContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  max-height: 400px;
+  padding-right: 5px;
+}
+
+/* ======= NOVA MENSAGEM ======= */
+#newMsg {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#msgInput {
+  flex: 1;
+  padding: 8px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background: #fff;
+  color: #000;
+}
+
+#sendBtn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#sendBtn:hover {
+  background-color: #333;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 900px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .character-side {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #feed {
+    width: 90%;
+  }
+}
