@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Crônicas do Fim</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: #f6f6f6;
+      font-family: 'Courier New', monospace;
+      background-image: url("img/login-bg.jpg"); /* imagem das mãos + logo */
+      background-repeat: no-repeat;
+      background-size: 60%; /* ocupa o lado esquerdo */
+      background-position: left center;
+    }
+
+    .login-box {
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 4px;
+      padding: 40px 35px;
+      width: 300px;
+      margin-right: 10%;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    .login-box label {
+      display: block;
+      font-size: 14px;
+      margin-top: 15px;
+      color: #000;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #000;
+      border-radius: 3px;
+      font-family: inherit;
+    }
+
+    .login-box button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    .login-box button:hover {
+      background-color: #222;
+    }
+
+    .register-link {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 13px;
+      color: #000;
+    }
+
+    .register-link a {
+      color: #000;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    #mensagem {
+      text-align: center;
+      color: #000;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <form id="loginForm">
+      <label for="usuario">Nome de usuário</label>
+      <input type="text" id="usuario" required>
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" required>
+
+      <button type="submit">ENTRAR</button>
+    </form>
+    <p class="register-link">Não tem uma conta? <a id="cadastreLink">Cadastre-se</a></p>
+    <p id="mensagem"></p>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
