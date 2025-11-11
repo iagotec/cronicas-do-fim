@@ -71,15 +71,19 @@ body {
 
 /* ======= FEED ======= */
 #feed {
-  width: 60%;
+  width: 45vw;               /* largura do bloco (ajuste se quiser mais largo) */
+  height: 80vh;              /* altura proporcional à janela */
   background: #fff;
   border-radius: 10px;
-  border: 2px solid #000; /* Borda preta ao redor do feed */
-  box-shadow: 4px 4px 0 #000; /* Sombra estilo quadrinho */
+  border: 2px solid #000;    /* borda preta */
+  box-shadow: 4px 4px 0 #000;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
 }
+
 
 #feed h2 {
   text-align: center;
@@ -111,11 +115,12 @@ body {
 
 /* Container do chat */
 #chatContainer {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
   overflow-y: auto;
-  max-height: 400px;
+  max-height: none;          /* libera a altura total */
   padding-right: 5px;
 }
 

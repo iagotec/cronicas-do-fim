@@ -30,6 +30,7 @@
         resultado.textContent = "🎉 Parabéns! Você acertou e liberou a roleta!";
         roletaSecao.style.display = "block";
         podeGirar = true;
+        
         } else {
         resultado.textContent = "❌ Você errou demais! Tente novamente.";
         roletaSecao.style.display = "none";
@@ -65,6 +66,21 @@
         }
 
         premio.textContent = `🎁 Você ganhou: ${item.nome} (${item.tipo})`;
+        // Desbloquear skin correspondente, se o personagem.js estiver carregado
+// Mapeia o tipo de prêmio para uma skin do personagem
+let skinId = "padrao";
+if (item.tipo === "Épico") skinId = "epico";
+if (item.tipo === "Lendário") skinId = "lendario";
+if (item.tipo === "Comum") skinId = "sombrio";
+
+// Salva a skin desbloqueada no localStorage (para aparecer no personagem)
+const skins = JSON.parse(localStorage.getItem("skins")) || ["padrao"];
+if (!skins.includes(skinId)) {
+  skins.push(skinId);
+  localStorage.setItem("skins", JSON.stringify(skins));
+  alert(`🎉 Você desbloqueou a skin ${item.nome}! Vá até o Avatar para equipar.`);
+}
+
 
         // Salvar no localStorage
         const itens = JSON.parse(localStorage.getItem("itens") || "[]");

@@ -2,31 +2,45 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Personagem</title>
+  <title>Avatar | Crônicas do Fim</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/personagem.css">
 </head>
 <body>
-   <!-- NAVBAR -->
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">CRÔNICAS<br>DO FIM</div>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Início</a></li>
-      <li><a href="personagem.html">Avatar</a></li>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="personagem.html" class="active">Avatar</a></li>
       <li><a href="feed.html">Comunidade</a></li>
       <li><a href="lojas.html">Lojas</a></li>
     </ul>
   </nav>
 
-  <section>
-    <h2>🧙‍♂️ Crie seu personagem</h2>
-    <label>Cor do cabelo: <input type="color" id="hairColor"></label>
-    <label>Cor da roupa: <input type="color" id="outfitColor"></label>
-    <button id="salvar">Salvar</button>
+  <!-- CONTEÚDO PRINCIPAL -->
+  <section id="avatarSection">
+    <h2>🧛‍♂️ Personalize seu personagem</h2>
 
-    <div id="preview" style="margin-top:20px;">
-      <div id="hair"></div>
-      <div id="body"></div>
+    <div id="preview">
+      <div id="avatar">
+        <div id="hair"></div>
+        <div id="body"></div>
+      </div>
+      <p id="skinNome" class="fade">Skin atual: <span id="skinAtiva">Padrão</span></p>
+    </div>
+
+    <div class="customizacao">
+      <label>Cor do cabelo: <input type="color" id="hairColor"></label>
+      <label>Cor da roupa: <input type="color" id="outfitColor"></label>
+      <button id="salvar">💾 Salvar aparência</button>
+    </div>
+
+    <hr>
+
+    <div id="skins">
+      <h3>🎭 Skins desbloqueadas</h3>
+      <div id="listaSkins"></div>
     </div>
   </section>
 
