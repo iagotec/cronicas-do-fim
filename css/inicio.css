@@ -104,21 +104,21 @@ body {
 }
 
 #btnCoragem:hover {
-  background-color: #8e44ad;
-  border-color: #8e44ad;
+  background-color: #A01919 ;
+  border-color: #A01919;
   letter-spacing: 1px;
-  box-shadow: 0 0 10px #8e44ad;
+  box-shadow: 0 0 10px #A01919;
 }
 
 /* ======= ANIMAÇÃO OPCIONAL ======= */
 @keyframes pulsar {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 0 10px #8e44ad;
+    box-shadow: 0 0 10px#A01919;
   }
   50% {
     transform: scale(1.05);
-    box-shadow: 0 0 20px #b06ee8;
+    box-shadow: 0 0 20px #A01919;
   }
 }
 

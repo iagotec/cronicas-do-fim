@@ -11,16 +11,16 @@ section {
   max-width: 600px;
   margin: 60px auto;
   background: #000;
-  border: 2px solid #8e44ad;
+  border: 2px solid#A01919;
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 0 20px #8e44ad55;
+  box-shadow: 0 0 20px #38263f55;
   text-align: center;
 }
 
 h2, h3 {
-  color: #8e44ad;
-  text-shadow: 0 0 6px #8e44ad;
+  color: #A01919;
+  text-shadow: 0 0 6px #A01919;
 }
 
 .customizacao {
@@ -35,13 +35,13 @@ label {
 
 input[type="color"] {
   background: none;
-  border: 1px solid #8e44ad;
+  border: 1px solid #A01919;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button {
-  background-color: #8e44ad;
+  background-color: #A01919;
   color: #fff;
   border: none;
   padding: 10px 25px;
@@ -52,8 +52,8 @@ button {
 }
 
 button:hover {
-  background-color: #a95df5;
-  box-shadow: 0 0 10px #8e44ad;
+  background-color:#A01919;
+  box-shadow: 0 0 10px #A01919;
 }
 
 #preview {
@@ -69,7 +69,7 @@ button:hover {
   height: 180px;
   background: #222;
   border-radius: 15px;
-  border: 2px solid #8e44ad;
+  border: 2px solid #A01919;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +104,7 @@ button:hover {
 .skin-card {
   width: 100px;
   height: 100px;
-  border: 2px solid #8e44ad;
+  border: 2px solid #A01919;
   border-radius: 10px;
   background-color: #222;
   color: #fff;
@@ -118,12 +118,11 @@ button:hover {
 }
 
 .skin-card:hover {
-  box-shadow: 0 0 10px #8e44ad;
-  transform: scale(1.05);
+  box-shadow: 0 0 10px #A01919;
 }
 
 .skin-card.equipada {
-  background-color: #8e44ad;
+  background-color: #A01919;
   color: #000;
-  box-shadow: 0 0 15px #8e44ad;
+  box-shadow: 0 0 15px #A01919;
 }
